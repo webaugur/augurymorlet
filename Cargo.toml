@@ -1,0 +1,19 @@
+[package]
+name = "cwt-morlet"
+version = "0.2.0"
+edition = "2021"
+authors = ["webaugur"]
+description = "Morlet Continuous Wavelet Transform + Lomb-Scargle Periodogram with bootstrap confidence intervals, SVG visualization, and color themes for solar cycle analysis"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/webaugur/augurymorlet"
+keywords = ["wavelet", "lomb-scargle", "solar", "time-series", "bootstrap"]
+categories = ["science", "visualization", "mathematics"]
+
+[dependencies]
+ndarray = { version = "0.15", features = ["approx"] }
+rand = "0.8"
+plotters = { version = "0.3", features = ["svg_backend"] }
+indicatif = "0.17"
+rayon = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
